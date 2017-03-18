@@ -3669,8 +3669,8 @@ package type TQ</description>
 <part name="GND33" library="00Supply" deviceset="GND" device=""/>
 <part name="Q10" library="00Mosfet" deviceset="P-FET" device="SOT23" value="NTR4101PT1G"/>
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
-<part name="R31" library="00Resistor" deviceset="RESISTOR" device="R0805" value="560k"/>
-<part name="R32" library="00Resistor" deviceset="RESISTOR" device="R0805" value="270k"/>
+<part name="R31" library="00Resistor" deviceset="RESISTOR" device="R0805" value="620k"/>
+<part name="R32" library="00Resistor" deviceset="RESISTOR" device="R0805" value="300k"/>
 <part name="Q1" library="00Mosfet" deviceset="N-FET" device="SOT23" value="NX3008NBKW"/>
 <part name="C5" library="00Capacitor" deviceset="C_POLARIZED" device="10MM" value="470u 25V"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
@@ -3679,7 +3679,7 @@ package type TQ</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="Q3" library="00Mosfet" deviceset="N-FET" device="SOT23" value="NX3008NBKW"/>
-<part name="R6" library="00Resistor" deviceset="RESISTOR" device="R0805" value="22"/>
+<part name="R6" library="00Resistor" deviceset="RESISTOR" device="R0805" value="5R6"/>
 <part name="CON3" library="00Connector" deviceset="CON_6X" device="100MIL" value="ICSP"/>
 <part name="IC5" library="00PIC" deviceset="PIC18F46J50" device=""/>
 <part name="X2" library="00Crystal" deviceset="CRYSTAL" device="5X3.2MM" value="ABM3-8.000MHZ-D2Y-T"/>

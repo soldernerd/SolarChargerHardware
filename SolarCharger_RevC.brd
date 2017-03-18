@@ -24,8 +24,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -1300,14 +1300,14 @@ package type TQ</description>
 <element name="R5" library="00Resistor" package="R0805" value="300k" x="40.9575" y="26.9875" rot="R270"/>
 <element name="C17" library="00Capacitor" package="C0805" value="100n" x="67.945" y="51.435" rot="R90"/>
 <element name="Q10" library="00Mosfet" package="SOT23" value="NTR4101PT1G" x="83.185" y="53.34"/>
-<element name="R31" library="00Resistor" package="R0805" value="560k" x="80.3275" y="54.2925" rot="R90"/>
-<element name="R32" library="00Resistor" package="R0805" value="270k" x="82.8675" y="48.895" rot="R270"/>
+<element name="R31" library="00Resistor" package="R0805" value="620k" x="80.3275" y="54.2925" rot="R90"/>
+<element name="R32" library="00Resistor" package="R0805" value="300k" x="82.8675" y="48.895" rot="R270"/>
 <element name="Q1" library="00Mosfet" package="SOT23" value="NX3008NBKW" x="17.145" y="57.785" rot="R270"/>
 <element name="C5" library="00Capacitor" package="10MM" value="470u 25V" x="25.0825" y="43.815" locked="yes"/>
 <element name="C6" library="00Capacitor" package="C1206" value="10u 25V" x="19.685" y="37.7825" rot="R180"/>
 <element name="C7" library="00Capacitor" package="C0805" value="100n" x="25.4" y="37.465"/>
 <element name="Q3" library="00Mosfet" package="SOT23" value="NX3008NBKW" x="39.6875" y="23.495" rot="R90"/>
-<element name="R6" library="00Resistor" package="R0805" value="22" x="21.9075" y="22.225" rot="R270"/>
+<element name="R6" library="00Resistor" package="R0805" value="5R6" x="21.9075" y="22.225" rot="R270"/>
 <element name="CON3" library="00Connector" package="100MIL_6X" value="ICSP" x="89.8525" y="41.5925" rot="R90"/>
 <element name="IC5" library="00PIC" package="TQFP44" value="PIC18F46J50" x="76.2" y="41.5925" rot="R180"/>
 <element name="X2" library="00Crystal" package="5X3.2MM" value="ABM3-8.000MHZ-D2Y-T" x="65.405" y="39.0525" rot="R270"/>
@@ -1891,8 +1891,8 @@ package type TQ</description>
 <contactref element="L1" pad="2G"/>
 <contactref element="L1" pad="2H"/>
 <via x="39.52875" y="33.49625" extent="1-16" drill="0.9" shape="octagon"/>
-<wire x1="37.1475" y1="37.4775" x2="37.1475" y2="37.4775" width="0" layer="19" extent="1-16"/>
 <wire x1="29.21" y1="30.8675" x2="29.21" y2="31.0675" width="0.8128" layer="16"/>
+<wire x1="37.1475" y1="37.4775" x2="37.1475" y2="37.4775" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VIN_SENSE">
 <contactref element="R2" pad="2"/>
