@@ -3644,8 +3644,8 @@ package type TQ</description>
 <part name="P+15" library="00Supply" deviceset="+5V" device=""/>
 <part name="P+14" library="00Supply" deviceset="+5V" device=""/>
 <part name="R23" library="00Resistor" deviceset="RESISTOR" device="R0805" value="TBD"/>
-<part name="R25" library="00Resistor" deviceset="RESISTOR" device="R0805" value="25k"/>
-<part name="R27" library="00Resistor" deviceset="RESISTOR" device="R0805" value="25k"/>
+<part name="R25" library="00Resistor" deviceset="RESISTOR" device="R0805" value="27k"/>
+<part name="R27" library="00Resistor" deviceset="RESISTOR" device="R0805" value="27k"/>
 <part name="R26" library="00Resistor" deviceset="RESISTOR" device="R0805" value="68k"/>
 <part name="R24" library="00Resistor" deviceset="RESISTOR" device="R0805" value="68k"/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>

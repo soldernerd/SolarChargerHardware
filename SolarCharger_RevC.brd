@@ -1287,8 +1287,8 @@ package type TQ</description>
 <element name="C23" library="00Capacitor" package="C0805" value="100n" x="46.0375" y="47.3075" rot="R180"/>
 <element name="X4" library="00Connector" package="USB_A" value="USB_A" x="43.815" y="4.1275"/>
 <element name="R23" library="00Resistor" package="R0805" value="TBD" x="43.815" y="9.525" rot="R180"/>
-<element name="R25" library="00Resistor" package="R0805" value="25k" x="42.8625" y="12.3825" rot="R270"/>
-<element name="R27" library="00Resistor" package="R0805" value="25k" x="44.7675" y="12.3825" rot="R270"/>
+<element name="R25" library="00Resistor" package="R0805" value="27k" x="42.8625" y="12.3825" rot="R270"/>
+<element name="R27" library="00Resistor" package="R0805" value="27k" x="44.7675" y="12.3825" rot="R270"/>
 <element name="R26" library="00Resistor" package="R0805" value="68k" x="46.6725" y="10.795" rot="R270"/>
 <element name="R24" library="00Resistor" package="R0805" value="68k" x="40.9575" y="10.795" rot="R270"/>
 <element name="X3" library="00Connector" package="USB_A" value="USB_A" x="26.035" y="4.1275"/>
