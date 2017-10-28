@@ -3837,6 +3837,8 @@ package type TQ</description>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="IC10" library="00Logic" deviceset="AT45DB161E" device=""/>
 <part name="GND84" library="00Supply" deviceset="GND" device=""/>
+<part name="P+16" library="supply1" deviceset="VCC" device=""/>
+<part name="P+17" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5159,6 +5161,8 @@ package type TQ</description>
 <instance part="GND49" gate="1" x="190.5" y="88.9"/>
 <instance part="IC10" gate="G$1" x="124.46" y="63.5"/>
 <instance part="GND84" gate="1" x="147.32" y="27.94"/>
+<instance part="P+16" gate="VCC" x="154.94" y="81.28"/>
+<instance part="P+17" gate="VCC" x="88.9" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -5295,6 +5299,26 @@ package type TQ</description>
 <wire x1="175.26" y1="116.84" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
 <label x="175.26" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<wire x1="142.24" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="60.96" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="55.88" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<junction x="154.94" y="55.88"/>
+<pinref part="IC10" gate="G$1" pin="VCC"/>
+<pinref part="IC10" gate="G$1" pin="!WP!"/>
+<pinref part="P+16" gate="VCC" pin="VCC"/>
+<wire x1="154.94" y1="60.96" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<junction x="154.94" y="60.96"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
+<label x="93.98" y="60.96" size="1.778" layer="95"/>
+<pinref part="IC10" gate="G$1" pin="!RESET!"/>
+<pinref part="P+17" gate="VCC" pin="VCC"/>
+<wire x1="88.9" y1="60.96" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -5325,24 +5349,6 @@ package type TQ</description>
 <pinref part="Q8" gate="G$1" pin="G"/>
 <wire x1="71.12" y1="111.76" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
 <label x="58.42" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="142.24" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="60.96" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-<label x="157.48" y="60.96" size="1.778" layer="95"/>
-<junction x="154.94" y="60.96"/>
-<wire x1="154.94" y1="55.88" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-<junction x="154.94" y="55.88"/>
-<pinref part="IC10" gate="G$1" pin="VCC"/>
-<pinref part="IC10" gate="G$1" pin="!WP!"/>
-</segment>
-<segment>
-<wire x1="106.68" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
-<label x="93.98" y="60.96" size="1.778" layer="95"/>
-<pinref part="IC10" gate="G$1" pin="!RESET!"/>
 </segment>
 </net>
 <net name="VOUT" class="1">
@@ -5411,8 +5417,8 @@ package type TQ</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<wire x1="142.24" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-<label x="157.48" y="71.12" size="1.778" layer="95"/>
+<wire x1="142.24" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
+<label x="144.78" y="71.12" size="1.778" layer="95"/>
 <pinref part="IC10" gate="G$1" pin="MISO"/>
 </segment>
 </net>

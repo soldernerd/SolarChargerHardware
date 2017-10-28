@@ -3904,10 +3904,10 @@ package type TQ</description>
 <part name="+3V1" library="00Supply" deviceset="+3V3" device=""/>
 <part name="+3V2" library="00Supply" deviceset="+3V3" device=""/>
 <part name="+3V3" library="00Supply" deviceset="+3V3" device=""/>
-<part name="+3V4" library="00Supply" deviceset="+3V3" device=""/>
+<part name="+3V4" library="00Supply" deviceset="+5V" device=""/>
 <part name="+3V5" library="00Supply" deviceset="+3V3" device=""/>
 <part name="+3V6" library="00Supply" deviceset="+3V3" device=""/>
-<part name="+3V7" library="00Supply" deviceset="+3V3" device=""/>
+<part name="+3V7" library="00Supply" deviceset="+5V" device=""/>
 <part name="C31" library="00Capacitor" deviceset="C" device="C0805" value="100n"/>
 <part name="IC9" library="00Sensor" deviceset="INA21*" device="" value="INA213"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -4595,10 +4595,10 @@ package type TQ</description>
 <instance part="+3V1" gate="G$1" x="58.42" y="38.1"/>
 <instance part="+3V2" gate="G$1" x="127" y="33.02"/>
 <instance part="+3V3" gate="G$1" x="246.38" y="96.52"/>
-<instance part="+3V4" gate="G$1" x="238.76" y="167.64"/>
+<instance part="+3V4" gate="1" x="238.76" y="167.64"/>
 <instance part="+3V5" gate="G$1" x="104.14" y="170.18"/>
 <instance part="+3V6" gate="G$1" x="177.8" y="66.04"/>
-<instance part="+3V7" gate="G$1" x="238.76" y="137.16"/>
+<instance part="+3V7" gate="1" x="238.76" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -4806,12 +4806,6 @@ package type TQ</description>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="165.1" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="CON4" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="160.02" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="IC5" gate="G$1" pin="VUSB"/>
 <wire x1="116.84" y1="165.1" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
@@ -4829,12 +4823,6 @@ package type TQ</description>
 <junction x="177.8" y="48.26"/>
 <pinref part="IC6" gate="G$1" pin="IN"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="CON5" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="129.54" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="USB+" class="0">
@@ -5157,6 +5145,20 @@ package type TQ</description>
 <wire x1="43.18" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
 <label x="25.4" y="111.76" size="1.778" layer="95"/>
 <pinref part="IC5" gate="G$1" pin="RD5/PMD5/RP22"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<wire x1="238.76" y1="165.1" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="CON4" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="160.02" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="CON5" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="129.54" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>
