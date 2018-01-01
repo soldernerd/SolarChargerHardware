@@ -8,7 +8,7 @@
 </settings>
 <grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -16,16 +16,16 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -165,7 +165,7 @@
 <text x="87.63" y="40.3225" size="1.27" layer="22" font="vector" ratio="13" rot="MR0" align="center-left">GND</text>
 <text x="87.63" y="37.7825" size="1.27" layer="22" font="vector" ratio="13" rot="MR0" align="center-left">VCC</text>
 <text x="87.63" y="35.2425" size="1.27" layer="22" font="vector" ratio="13" rot="MR0" align="center-left">~MC</text>
-<text x="82.55" y="53.0225" size="1.27" layer="22" font="vector" ratio="13" rot="MR270" align="center">I2C</text>
+<text x="82.55" y="51.7525" size="1.27" layer="22" font="vector" ratio="13" rot="MR270" align="center">I2C</text>
 <text x="82.55" y="41.5925" size="1.27" layer="22" font="vector" ratio="13" rot="MR270" align="center">ICSP</text>
 <wire x1="87.9475" y1="56.8325" x2="87.9475" y2="54.2925" width="0.15" layer="22"/>
 <wire x1="87.9475" y1="54.2925" x2="87.9475" y2="51.7525" width="0.15" layer="22"/>
@@ -1932,6 +1932,9 @@ package type TQ</description>
 <via x="82.2325" y="27.6225" extent="1-16" drill="0.6"/>
 <contactref element="CON11" pad="3"/>
 <contactref element="CON8" pad="4"/>
+<via x="76.835" y="48.895" extent="1-16" drill="0.6"/>
+<via x="81.5975" y="52.07" extent="1-16" drill="0.6"/>
+<via x="80.3275" y="49.53" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="VIN" class="1">
 <contactref element="Q5" pad="MB1"/>
@@ -3563,10 +3566,9 @@ package type TQ</description>
 <signal name="N$34">
 <contactref element="R32" pad="2"/>
 <contactref element="Q9" pad="2"/>
-<wire x1="81.2775" y1="50.435" x2="81.2775" y2="51.115" width="0.3048" layer="1"/>
-<wire x1="81.2775" y1="51.115" x2="81.5975" y2="51.435" width="0.3048" layer="1"/>
-<wire x1="81.5975" y1="51.435" x2="82.7025" y2="51.435" width="0.3048" layer="1"/>
 <wire x1="82.7025" y1="51.435" x2="82.8675" y2="51.6" width="0.3048" layer="1"/>
+<wire x1="82.8675" y1="51.6" x2="82.4425" y2="51.6" width="0.3048" layer="1"/>
+<wire x1="82.4425" y1="51.6" x2="81.2775" y2="50.435" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$36">
 </signal>
@@ -3695,9 +3697,8 @@ package type TQ</description>
 <wire x1="59.53125" y1="44.60875" x2="60.325" y2="44.60875" width="0.3048" layer="1"/>
 <via x="61.9125" y="46.6725" extent="1-16" drill="0.4"/>
 <wire x1="61.9125" y1="46.6725" x2="66.04" y2="50.8" width="0.3048" layer="16"/>
-<wire x1="66.04" y1="50.8" x2="78.105" y2="50.8" width="0.3048" layer="16"/>
-<via x="78.105" y="50.8" extent="1-16" drill="0.4"/>
-<wire x1="78.2825" y1="50.6225" x2="78.105" y2="50.8" width="0.3048" layer="1"/>
+<wire x1="66.04" y1="50.8" x2="78.4225" y2="50.8" width="0.3048" layer="16"/>
+<via x="78.4225" y="50.8" extent="1-16" drill="0.4"/>
 <via x="55.40375" y="25.55875" extent="1-16" drill="0.4"/>
 <wire x1="55.40375" y1="25.55875" x2="57.785" y2="27.94" width="0.3048" layer="16"/>
 <wire x1="57.785" y1="27.94" x2="57.785" y2="33.3375" width="0.3048" layer="16"/>
@@ -3713,11 +3714,11 @@ package type TQ</description>
 <wire x1="60.0075" y1="43.18" x2="60.325" y2="43.4975" width="0.3048" layer="16"/>
 <wire x1="60.325" y1="43.4975" x2="60.325" y2="44.60875" width="0.3048" layer="16"/>
 <via x="60.325" y="44.60875" extent="1-16" drill="0.4"/>
-<wire x1="78.6" y1="47.3925" x2="78.6" y2="50.305" width="0.3048" layer="1"/>
-<wire x1="78.6" y1="50.305" x2="78.105" y2="50.8" width="0.3048" layer="1"/>
+<wire x1="78.6" y1="47.3925" x2="78.6" y2="50.6225" width="0.3048" layer="1"/>
+<wire x1="78.6" y1="50.6225" x2="78.4225" y2="50.8" width="0.3048" layer="1"/>
 <wire x1="77.6" y1="52.7075" x2="77.6" y2="51.94" width="0.3048" layer="1"/>
-<wire x1="77.6" y1="51.94" x2="78.105" y2="51.435" width="0.3048" layer="1"/>
-<wire x1="78.105" y1="51.435" x2="78.105" y2="50.8" width="0.3048" layer="1"/>
+<wire x1="77.6" y1="51.94" x2="78.4225" y2="51.1175" width="0.3048" layer="1"/>
+<wire x1="78.4225" y1="51.1175" x2="78.4225" y2="50.8" width="0.3048" layer="1"/>
 <wire x1="60.325" y1="44.60875" x2="60.96" y2="45.24375" width="0.3048" layer="1"/>
 <wire x1="60.96" y1="45.24375" x2="60.96" y2="45.72" width="0.3048" layer="1"/>
 <wire x1="60.96" y1="45.72" x2="61.9125" y2="46.6725" width="0.3048" layer="1"/>
@@ -3725,8 +3726,8 @@ package type TQ</description>
 <wire x1="58.705" y1="45.205" x2="58.705" y2="46.6725" width="0.3048" layer="1"/>
 <wire x1="40.9575" y1="14.9225" x2="40.19" y2="15.69" width="0.3048" layer="1"/>
 <wire x1="40.19" y1="15.69" x2="40.19" y2="17.5" width="0.3048" layer="1"/>
-<wire x1="89.8525" y1="50.4825" x2="78.4225" y2="50.4825" width="0.3048" layer="16"/>
-<wire x1="78.4225" y1="50.4825" x2="78.105" y2="50.8" width="0.3048" layer="16"/>
+<wire x1="89.8525" y1="50.4825" x2="78.74" y2="50.4825" width="0.3048" layer="16"/>
+<wire x1="78.74" y1="50.4825" x2="78.4225" y2="50.8" width="0.3048" layer="16"/>
 <contactref element="CON8" pad="2"/>
 </signal>
 <signal name="SDA">
@@ -3767,9 +3768,9 @@ package type TQ</description>
 <wire x1="77.6" y1="54.6075" x2="76.8325" y2="54.6075" width="0.3048" layer="1"/>
 <wire x1="76.8325" y1="54.6075" x2="76.5175" y2="54.2925" width="0.3048" layer="1"/>
 <wire x1="76.5175" y1="54.2925" x2="76.5175" y2="52.07" width="0.3048" layer="1"/>
-<wire x1="76.5175" y1="52.07" x2="77.1525" y2="51.435" width="0.3048" layer="1"/>
-<wire x1="77.1525" y1="51.435" x2="77.1525" y2="50.4825" width="0.3048" layer="1"/>
-<wire x1="77.1525" y1="50.4825" x2="77.7875" y2="49.8475" width="0.3048" layer="1"/>
+<wire x1="76.5175" y1="52.07" x2="77.62875" y2="50.95875" width="0.3048" layer="1"/>
+<wire x1="77.62875" y1="50.95875" x2="77.62875" y2="50.00625" width="0.3048" layer="1"/>
+<wire x1="77.62875" y1="50.00625" x2="77.7875" y2="49.8475" width="0.3048" layer="1"/>
 <wire x1="53.175" y1="45.085" x2="53.055" y2="45.205" width="0.3048" layer="1"/>
 <wire x1="53.055" y1="45.205" x2="53.055" y2="46.6725" width="0.3048" layer="1"/>
 <wire x1="43.18" y1="15.5575" x2="42.73" y2="16.0075" width="0.3048" layer="1"/>
@@ -4217,10 +4218,10 @@ package type TQ</description>
 <approved hash="3,1,5d2c1b0c95cf0eca"/>
 <approved hash="3,16,3838022a026e387c"/>
 <approved hash="3,1,fbc06a326a69fb9b"/>
-<approved hash="4,1,db33a1d9ee057d1f"/>
 <approved hash="4,1,20f65ed178faef2d"/>
-<approved hash="4,1,c0ab9bd91a157887"/>
+<approved hash="4,1,db33a1d9ee057d1f"/>
 <approved hash="4,1,1b6e44c17cfa1ab5"/>
+<approved hash="4,1,c0ab9bd91a157887"/>
 <approved hash="4,16,20f65ed178faef2d"/>
 <approved hash="4,16,db33a1d9ee057d1f"/>
 <approved hash="4,16,1b6e44c17cfa1ab5"/>
