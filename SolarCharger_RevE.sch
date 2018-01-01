@@ -1051,6 +1051,33 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <pad name="5" x="0" y="-1.27" drill="1" shape="octagon" rot="R90"/>
 <pad name="6" x="2.54" y="-1.27" drill="1" shape="octagon" rot="R90"/>
 </package>
+<package name="200MIL_5X">
+<description>5-pin 200mil header 1.3mm drill</description>
+<pad name="1" x="-10.16" y="0" drill="1.3" shape="long" rot="R90" thermals="no"/>
+<pad name="2" x="-5.08" y="0" drill="1.3" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.3" shape="long" rot="R90"/>
+<pad name="4" x="5.08" y="0" drill="1.3" shape="long" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1.3" shape="long" rot="R90"/>
+<wire x1="-12.7" y1="5" x2="12.7" y2="5" width="0.254" layer="21"/>
+<wire x1="12.7" y1="5" x2="12.7" y2="-5" width="0.254" layer="21"/>
+<wire x1="12.7" y1="-5" x2="-12.7" y2="-5" width="0.254" layer="21"/>
+<wire x1="-12.7" y1="-5" x2="-12.7" y2="5" width="0.254" layer="21"/>
+<text x="0" y="3" size="1.016" layer="25" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-3" size="1.016" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
+<package name="100MIL_5X">
+<wire x1="-6.35" y1="1.778" x2="6.35" y2="1.778" width="0.15" layer="21"/>
+<wire x1="6.35" y1="1.778" x2="6.35" y2="-1.778" width="0.15" layer="21"/>
+<wire x1="6.35" y1="-1.778" x2="-6.35" y2="-1.778" width="0.15" layer="21"/>
+<wire x1="-6.35" y1="-1.778" x2="-6.35" y2="1.778" width="0.15" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-6.35" y="1.905" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.35" y="-1.905" size="1.016" layer="27" ratio="10" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB_B">
@@ -1231,6 +1258,29 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <text x="12.065" y="-1.27" size="1.016" layer="95" align="center">6</text>
 <text x="14.605" y="-1.27" size="1.016" layer="95" align="center">7</text>
 <text x="17.145" y="-1.27" size="1.016" layer="95" align="center">8</text>
+</symbol>
+<symbol name="CON_5X">
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="11.43" y1="-1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="11.43" y1="-1.905" x2="11.43" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="11.43" y2="1.27" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="7.62" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="0.635" width="0.254" layer="94"/>
+<text x="-1.27" y="0" size="1.27" layer="95" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="6.35" y="1.27" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
+<text x="-0.635" y="-1.27" size="1.016" layer="95" align="center">1</text>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="5" x="10.16" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="1.905" y="-1.27" size="1.016" layer="95" align="center">2</text>
+<text x="4.445" y="-1.27" size="1.016" layer="95" align="center">3</text>
+<text x="6.985" y="-1.27" size="1.016" layer="95" align="center">4</text>
+<text x="9.525" y="-1.27" size="1.016" layer="95" align="center">5</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1452,6 +1502,38 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <connect gate="G$1" pin="P$6" pad="6"/>
 <connect gate="G$1" pin="P$7" pad="7"/>
 <connect gate="G$1" pin="P$8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_5X" prefix="CON">
+<description>5-pin header</description>
+<gates>
+<gate name="G$1" symbol="CON_5X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="200MIL" package="200MIL_5X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="100MIL" package="100MIL_5X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2610,6 +2692,33 @@ Voltage Output, Low- or High-Side Measurement, Bidirectional, Zero-Drift Series<
 <wire x1="-1.4" y1="1.5" x2="1.4" y2="1.5" width="0.15" layer="51"/>
 <circle x="-0.5" y="0.9" radius="0.4" width="0.15" layer="51"/>
 </package>
+<package name="EIAJ_SOIC8">
+<description>Extra long pads to make it compatible with 8-lead EIAJ SOIC</description>
+<smd name="1" x="-3" y="1.905" dx="2.25" dy="0.7" layer="1"/>
+<smd name="2" x="-3" y="0.635" dx="2.25" dy="0.7" layer="1"/>
+<smd name="3" x="-3" y="-0.635" dx="2.25" dy="0.7" layer="1"/>
+<smd name="4" x="-3" y="-1.905" dx="2.25" dy="0.7" layer="1"/>
+<smd name="5" x="3" y="-1.905" dx="2.25" dy="0.7" layer="1"/>
+<smd name="6" x="3" y="-0.635" dx="2.25" dy="0.7" layer="1"/>
+<smd name="7" x="3" y="0.635" dx="2.25" dy="0.7" layer="1"/>
+<smd name="8" x="3" y="1.905" dx="2.25" dy="0.7" layer="1"/>
+<text x="0" y="5.08" size="2.0828" layer="25" ratio="10" rot="SR0" align="top-center">&gt;NAME</text>
+<text x="0" y="-5.08" size="2.0828" layer="27" ratio="10" rot="SR0" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.8" y1="2.4" x2="1.8" y2="2.4" width="0.15" layer="21"/>
+<wire x1="1.8" y1="2.4" x2="1.8" y2="-2.4" width="0.15" layer="21"/>
+<wire x1="1.8" y1="-2.4" x2="-1.8" y2="-2.4" width="0.15" layer="21"/>
+<wire x1="-1.8" y1="-2.4" x2="-1.8" y2="2.4" width="0.15" layer="21"/>
+<circle x="-1.2" y="1.8" radius="0.4472125" width="0.15" layer="21"/>
+<text x="0" y="0" size="1.27" layer="21" font="vector" ratio="13" rot="SR90" align="center">&gt;NAME</text>
+<rectangle x1="1.8" y1="1.7" x2="3" y2="2.1" layer="51"/>
+<rectangle x1="-3" y1="1.7" x2="-1.8" y2="2.1" layer="51"/>
+<rectangle x1="1.8" y1="0.43" x2="3" y2="0.83" layer="51"/>
+<rectangle x1="1.8" y1="-0.84" x2="3" y2="-0.44" layer="51"/>
+<rectangle x1="1.8" y1="-2.11" x2="3" y2="-1.71" layer="51"/>
+<rectangle x1="-3" y1="0.43" x2="-1.8" y2="0.83" layer="51"/>
+<rectangle x1="-3" y1="-2.11" x2="-1.8" y2="-1.71" layer="51"/>
+<rectangle x1="-3" y1="-0.84" x2="-1.8" y2="-0.44" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC4605">
@@ -2750,6 +2859,21 @@ Voltage Output, Low- or High-Side Measurement, Bidirectional, Zero-Drift Series<
 </gates>
 <devices>
 <device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="4"/>
+<connect gate="G$1" pin="!RESET!" pad="3"/>
+<connect gate="G$1" pin="!WP!" pad="5"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="MISO" pad="8"/>
+<connect gate="G$1" pin="MOSI" pad="1"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EIAJ" package="EIAJ_SOIC8">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="4"/>
 <connect gate="G$1" pin="!RESET!" pad="3"/>
@@ -3702,7 +3826,6 @@ package type TQ</description>
 <part name="X1" library="00Crystal" deviceset="CRYSTAL" device="3.2X1.5" value="ABS07-120-32.768KHZ-T"/>
 <part name="C19" library="00Capacitor" deviceset="C" device="C0805" value="6p8"/>
 <part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="R15" library="00Resistor" deviceset="RESISTOR" device="R0805" value="100k"/>
 <part name="R12" library="00Resistor" deviceset="RESISTOR" device="R0805" value="10k"/>
 <part name="R11" library="00Resistor" deviceset="RESISTOR" device="R0805" value="10k"/>
 <part name="GND1" library="00Supply" deviceset="GND" device=""/>
@@ -3792,7 +3915,6 @@ package type TQ</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="Q3" library="00Mosfet" deviceset="N-FET" device="SOT23" value="NX3008NBKW"/>
 <part name="R6" library="00Resistor" deviceset="RESISTOR" device="R0805" value="5R6"/>
-<part name="CON3" library="00Connector" deviceset="CON_6X" device="100MIL" value="ICSP"/>
 <part name="IC5" library="00PIC" deviceset="PIC18F46J50" device=""/>
 <part name="X2" library="00Crystal" deviceset="CRYSTAL" device="5X3.2MM" value="ABM3-8.000MHZ-D2Y-T"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
@@ -3862,15 +3984,17 @@ package type TQ</description>
 <part name="C47" library="00Capacitor" deviceset="C" device="C0805" value="1u"/>
 <part name="R35" library="00Resistor" deviceset="RESISTOR" device="R0805" value="1k"/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
-<part name="IC10" library="00Logic" deviceset="AT45DB161E" device=""/>
+<part name="IC10" library="00Logic" deviceset="AT45DB161E" device="EIAJ" value="AT45DB321E"/>
 <part name="GND84" library="00Supply" deviceset="GND" device=""/>
 <part name="P+16" library="supply1" deviceset="VCC" device=""/>
 <part name="P+17" library="supply1" deviceset="VCC" device=""/>
-<part name="CON8" library="00Connector" deviceset="CON_3X" device="100MIL"/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
-<part name="CON9" library="00Connector" deviceset="CON_6X" device="3X2" value="CON_6X3X2"/>
+<part name="CON9" library="00Connector" deviceset="CON_6X" device="3X2" value="SPI"/>
 <part name="GND85" library="supply1" deviceset="GND" device=""/>
+<part name="CON8" library="00Connector" deviceset="CON_4X" device="100MIL" value="I2C"/>
+<part name="CON11" library="00Connector" deviceset="CON_5X" device="100MIL"/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
+<part name="P+19" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4543,7 +4667,6 @@ package type TQ</description>
 <instance part="R11" gate="G$1" x="68.58" y="27.94" rot="R180"/>
 <instance part="C17" gate="G$1" x="177.8" y="43.18"/>
 <instance part="GND33" gate="1" x="218.44" y="27.94"/>
-<instance part="CON3" gate="G$1" x="134.62" y="22.86" rot="R270"/>
 <instance part="IC5" gate="G$1" x="93.98" y="96.52"/>
 <instance part="X2" gate="P" x="177.8" y="109.22" rot="R90"/>
 <instance part="P+5" gate="VCC" x="127" y="30.48"/>
@@ -4574,11 +4697,13 @@ package type TQ</description>
 <instance part="C47" gate="G$1" x="228.6" y="119.38" rot="R180"/>
 <instance part="R35" gate="G$1" x="236.22" y="127" rot="R180"/>
 <instance part="GND83" gate="1" x="228.6" y="111.76"/>
-<instance part="CON8" gate="G$1" x="246.38" y="101.6" rot="R270"/>
 <instance part="GND44" gate="1" x="236.22" y="93.98"/>
 <instance part="CON9" gate="G$1" x="200.66" y="170.18" rot="R270"/>
 <instance part="GND85" gate="1" x="195.58" y="152.4"/>
-<instance part="P+18" gate="VCC" x="172.72" y="172.72"/>
+<instance part="CON8" gate="G$1" x="246.38" y="106.68" rot="R270"/>
+<instance part="CON11" gate="G$1" x="134.62" y="22.86" rot="R270"/>
+<instance part="P+18" gate="VCC" x="220.98" y="111.76"/>
+<instance part="P+19" gate="VCC" x="177.8" y="172.72"/>
 </instances>
 <busses>
 </busses>
@@ -4586,9 +4711,9 @@ package type TQ</description>
 <net name="GND" class="0">
 <segment>
 <wire x1="132.08" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="G$1" pin="3"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="127" y1="17.78" x2="127" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="CON11" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
@@ -4714,10 +4839,10 @@ package type TQ</description>
 <wire x1="228.6" y1="116.84" x2="228.6" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON8" gate="G$1" pin="3"/>
 <wire x1="243.84" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="99.06" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
+<pinref part="CON8" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="CON9" gate="G$1" pin="6"/>
@@ -4729,31 +4854,31 @@ package type TQ</description>
 <net name="PGD/ENC_B" class="0">
 <segment>
 <label x="93.98" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="CON3" gate="G$1" pin="4"/>
 <pinref part="IC5" gate="G$1" pin="RB7/KBI3/PGD/RP10"/>
 <wire x1="132.08" y1="15.24" x2="93.98" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="15.24" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="CON11" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="PGC/ENC_A" class="0">
 <segment>
 <label x="88.9" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="CON3" gate="G$1" pin="5"/>
 <pinref part="IC5" gate="G$1" pin="RB6/KBI2/PGC/RP9"/>
 <wire x1="132.08" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="12.7" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="CON11" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <wire x1="132.08" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="CON3" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="127" y1="20.32" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="127" y1="25.4" x2="127" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <junction x="127" y="25.4"/>
+<pinref part="CON11" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="VDD@2"/>
@@ -4794,11 +4919,18 @@ package type TQ</description>
 <junction x="58.42" y="27.94"/>
 </segment>
 <segment>
-<pinref part="CON9" gate="G$1" pin="5"/>
-<wire x1="198.12" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
-<label x="182.88" y="160.02" size="1.778" layer="95"/>
+<pinref part="CON9" gate="G$1" pin="3"/>
+<wire x1="198.12" y1="165.1" x2="177.8" y2="165.1" width="0.1524" layer="91"/>
+<label x="182.88" y="165.1" size="1.778" layer="95"/>
+<pinref part="P+19" gate="VCC" pin="VCC"/>
+<wire x1="177.8" y1="165.1" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CON8" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P+18" gate="VCC" pin="VCC"/>
-<wire x1="172.72" y1="160.02" x2="172.72" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="106.68" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
+<label x="228.6" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB+" class="0">
@@ -4828,9 +4960,9 @@ package type TQ</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="CON8" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
-<label x="228.6" y="104.14" size="1.778" layer="95"/>
+<wire x1="243.84" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
+<label x="228.6" y="101.6" size="1.778" layer="95"/>
+<pinref part="CON8" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -4842,9 +4974,9 @@ package type TQ</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
+<wire x1="243.84" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
+<label x="228.6" y="104.14" size="1.778" layer="95"/>
 <pinref part="CON8" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
-<label x="228.6" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_SENSE" class="0">
@@ -5040,7 +5172,6 @@ package type TQ</description>
 <net name="!MCLR!" class="0">
 <segment>
 <label x="99.06" y="33.02" size="1.778" layer="95" rot="R90"/>
-<pinref part="CON3" gate="G$1" pin="1"/>
 <pinref part="IC5" gate="G$1" pin="!MCLR!"/>
 <wire x1="132.08" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="22.86" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
@@ -5048,6 +5179,7 @@ package type TQ</description>
 <wire x1="99.06" y1="25.4" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <junction x="99.06" y="25.4"/>
+<pinref part="CON11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5067,14 +5199,14 @@ package type TQ</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<wire x1="22.86" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<label x="25.4" y="101.6" size="1.778" layer="95"/>
-<pinref part="IC5" gate="G$1" pin="RD7/PMD7/RP24"/>
-</segment>
-<segment>
 <pinref part="CON9" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="167.64" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
 <label x="182.88" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<label x="25.4" y="106.68" size="1.778" layer="95"/>
+<pinref part="IC5" gate="G$1" pin="RD6/PMD6/RP23"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -5084,9 +5216,9 @@ package type TQ</description>
 <pinref part="IC5" gate="G$1" pin="RD4/PMD4/RP21"/>
 </segment>
 <segment>
-<pinref part="CON9" gate="G$1" pin="3"/>
-<wire x1="198.12" y1="165.1" x2="180.34" y2="165.1" width="0.1524" layer="91"/>
-<label x="182.88" y="165.1" size="1.778" layer="95"/>
+<pinref part="CON9" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="170.18" x2="180.34" y2="170.18" width="0.1524" layer="91"/>
+<label x="182.88" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LI" class="0">
@@ -5117,13 +5249,6 @@ package type TQ</description>
 <wire x1="228.6" y1="124.46" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <junction x="228.6" y="127"/>
 <label x="210.82" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWR_GOOD" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="RD1/PMD1/SDA2"/>
-<wire x1="93.98" y1="147.32" x2="93.98" y2="162.56" width="0.1524" layer="91"/>
-<label x="93.98" y="149.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="OUT4_ON" class="0">
@@ -5184,9 +5309,9 @@ package type TQ</description>
 </net>
 <net name="!SS1!" class="0">
 <segment>
-<wire x1="22.86" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
-<label x="25.4" y="106.68" size="1.778" layer="95"/>
-<pinref part="IC5" gate="G$1" pin="RD6/PMD6/RP23"/>
+<wire x1="22.86" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<label x="25.4" y="101.6" size="1.778" layer="95"/>
+<pinref part="IC5" gate="G$1" pin="RD7/PMD7/RP24"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -5196,9 +5321,9 @@ package type TQ</description>
 <pinref part="IC5" gate="G$1" pin="RD5/PMD5/RP22"/>
 </segment>
 <segment>
-<pinref part="CON9" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="170.18" x2="180.34" y2="170.18" width="0.1524" layer="91"/>
-<label x="182.88" y="170.18" size="1.778" layer="95"/>
+<pinref part="CON9" gate="G$1" pin="5"/>
+<wire x1="198.12" y1="160.02" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
+<label x="182.88" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!SS2!" class="0">
@@ -5206,6 +5331,11 @@ package type TQ</description>
 <pinref part="CON9" gate="G$1" pin="4"/>
 <wire x1="198.12" y1="162.56" x2="180.34" y2="162.56" width="0.1524" layer="91"/>
 <label x="182.88" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="RD1/PMD1/SDA2"/>
+<wire x1="93.98" y1="147.32" x2="93.98" y2="162.56" width="0.1524" layer="91"/>
+<label x="93.98" y="149.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
@@ -5237,7 +5367,6 @@ package type TQ</description>
 <instance part="R14" gate="G$1" x="88.9" y="121.92" rot="R180"/>
 <instance part="Q8" gate="G$1" x="73.66" y="114.3"/>
 <instance part="GND43" gate="1" x="76.2" y="104.14"/>
-<instance part="R15" gate="G$1" x="96.52" y="144.78" rot="R180"/>
 <instance part="P+7" gate="VCC" x="73.66" y="81.28"/>
 <instance part="P+8" gate="VCC" x="134.62" y="152.4"/>
 <instance part="IC8" gate="G$1" x="45.72" y="66.04"/>
@@ -5375,11 +5504,7 @@ package type TQ</description>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="132.08" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
 <junction x="111.76" y="137.16"/>
-<wire x1="134.62" y1="149.86" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="144.78" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="144.78" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
-<junction x="134.62" y="144.78"/>
+<wire x1="134.62" y1="149.86" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -5418,18 +5543,6 @@ package type TQ</description>
 <pinref part="BRD1" gate="G$1" pin="SCL"/>
 <wire x1="180.34" y1="116.84" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <label x="180.34" y="93.98" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="PWR_GOOD" class="0">
-<segment>
-<pinref part="IC9" gate="G$1" pin="PG"/>
-<wire x1="81.28" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="144.78" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
-<junction x="83.82" y="132.08"/>
-<label x="86.36" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_HIGH" class="0">
