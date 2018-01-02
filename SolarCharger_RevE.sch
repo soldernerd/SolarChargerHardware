@@ -3915,7 +3915,7 @@ package type TQ</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="Q3" library="00Mosfet" deviceset="N-FET" device="SOT23" value="NX3008NBKW"/>
 <part name="R6" library="00Resistor" deviceset="RESISTOR" device="R0805" value="5R6"/>
-<part name="IC5" library="00PIC" deviceset="PIC18F46J50" device=""/>
+<part name="IC5" library="00PIC" deviceset="PIC18F46J50" device="" value="PIC18F47J53"/>
 <part name="X2" library="00Crystal" deviceset="CRYSTAL" device="5X3.2MM" value="ABM3-8.000MHZ-D2Y-T"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
