@@ -1508,8 +1508,8 @@ package type TQ</description>
 <element name="C16" library="00Capacitor" package="C0805" value="100n" x="67.945" y="41.275" rot="R270"/>
 <element name="C14" library="00Capacitor" package="C0805" value="100n" x="74.6125" y="32.7025" rot="R270"/>
 <element name="CON4" library="00Connector" package="100MIL_3X" value="CON_3X100MIL" x="10.16" y="46.355" rot="R90"/>
-<element name="IC6" library="00VoltageReference" package="SOT23" value="TS6001" x="69.215" y="51.435"/>
-<element name="C22" library="00Capacitor" package="C0805" value="1.8n" x="71.755" y="51.435" rot="R90"/>
+<element name="IC6" library="00VoltageReference" package="SOT23" value="TI_REF2925" x="69.215" y="51.435"/>
+<element name="C22" library="00Capacitor" package="C0805" value="1u" x="71.755" y="51.435" rot="R90"/>
 <element name="R10" library="00Resistor" package="R0805" value="300k" x="42.545" y="56.67375" rot="R90"/>
 <element name="IC8" library="00Logic" package="SOT-23-5" value="24AA16" x="76.2" y="53.6575" rot="R90"/>
 <element name="C30" library="00Capacitor" package="C0805" value="100n" x="90.4875" y="24.13" rot="R90"/>

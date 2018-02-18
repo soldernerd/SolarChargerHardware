@@ -3925,11 +3925,11 @@ package type TQ</description>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="CON4" library="00Connector" deviceset="CON_3X" device="100MIL"/>
-<part name="IC6" library="00VoltageReference" deviceset="TS6001" device=""/>
+<part name="IC6" library="00VoltageReference" deviceset="TS6001" device="" value="TI_REF2925"/>
 <part name="GND29" library="00Supply" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="C22" library="00Capacitor" deviceset="C" device="C0805" value="1.8n"/>
+<part name="C22" library="00Capacitor" deviceset="C" device="C0805" value="1u"/>
 <part name="GND30" library="00Supply" deviceset="GND" device=""/>
 <part name="R10" library="00Resistor" deviceset="RESISTOR" device="R0805" value="300k"/>
 <part name="IC8" library="00Logic" deviceset="24AA16" device=""/>
